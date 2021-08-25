@@ -19,5 +19,6 @@ environment: production
 remote_data_prefix: "https://open-sdg-test-prod.github.io/open-sdg-test-prod-data/"
 
 analytics:
-  # For production, you likely want to enter a Google Analytics code below.
-  ga_prod: ''
+  ua: UA-201075064-1
+  gtag: G-BFYXBP4PH2
+  gtm: GTM-K5J7R8C
