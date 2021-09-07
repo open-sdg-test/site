@@ -128,7 +128,7 @@ var translations = {
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" crossorigin="">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
         <link rel="stylesheet" href="https://cdn.datatables.net/fixedcolumns/3.2.3/css/fixedColumns.dataTables.min.css" crossorigin="">
-        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210826092511">
+        <link rel="stylesheet" href="/site/assets/css/style.css?v=20210907092120">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -638,7 +638,96 @@ data-event-label="high"
       }
     }
 
-    // Set values according to this site's configuration.propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_GOAL__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_SERIES_DESCR__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.META_LAST_UPDATE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_ORGANISATION__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_NAME__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.ORGANISATION_UNIT__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_FUNCT__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_PHONE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_MAIL__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_EMAIL__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.IND_DEF_CON_CLASS__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.STAT_CONC_DEF__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SRC_TYPE_COLL_METHOD__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SOURCE_TYPE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.COLL_METHOD__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.FREQ_COLL__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.REL_CAL_POLICY__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_SOURCE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.COMPILING_ORG__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.INST_MANDATE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_METHOD__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.RATIONALE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.REC_USE_LIM__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_COMP__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_VALIDATION__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.ADJUSTMENT__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.IMPUTATION__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.REG_AGG__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.DOC_METHOD__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_MGMNT__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSURE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_DOC__GLOBAL'));propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO'));
+    // Set values according to this site's configuration.
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_GOAL__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_SERIES_DESCR__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.META_LAST_UPDATE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_CUSTODIAN_AGENCIES__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_ORGANISATION__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_NAME__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.ORGANISATION_UNIT__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_FUNCT__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_PHONE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_MAIL__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_EMAIL__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.IND_DEF_CON_CLASS__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.STAT_CONC_DEF__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SRC_TYPE_COLL_METHOD__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SOURCE_TYPE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.COLL_METHOD__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.FREQ_COLL__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.REL_CAL_POLICY__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_SOURCE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.COMPILING_ORG__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.INST_MANDATE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_METHOD__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.RATIONALE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.REC_USE_LIM__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_COMP__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_VALIDATION__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.ADJUSTMENT__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.IMPUTATION__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.REG_AGG__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.DOC_METHOD__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_MGMNT__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSURE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_DOC__GLOBAL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR_INFO'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('SDG_GOAL', "Goal 1: End poverty in all its forms everywhere");
         var propertyEditor = editor.getEditor('root.SDG_GOAL');
@@ -651,6 +740,8 @@ data-event-label="high"
         console.log('Unable to set config key: SDG_GOAL');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_GOAL'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('SDG_TARGET', "Target 1.1: By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day");
         var propertyEditor = editor.getEditor('root.SDG_TARGET');
@@ -663,6 +754,8 @@ data-event-label="high"
         console.log('Unable to set config key: SDG_TARGET');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_TARGET'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('SDG_INDICATOR', "Indicator 1.1.1: Proportion of the population living below the international poverty line by sex, age, employment status and geographic location (urban/rural)");
         var propertyEditor = editor.getEditor('root.SDG_INDICATOR');
@@ -675,6 +768,8 @@ data-event-label="high"
         console.log('Unable to set config key: SDG_INDICATOR');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_INDICATOR'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('SDG_SERIES_DESCR', "");
         var propertyEditor = editor.getEditor('root.SDG_SERIES_DESCR');
@@ -687,6 +782,8 @@ data-event-label="high"
         console.log('Unable to set config key: SDG_SERIES_DESCR');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_SERIES_DESCR'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('META_LAST_UPDATE', "");
         var propertyEditor = editor.getEditor('root.META_LAST_UPDATE');
@@ -699,6 +796,8 @@ data-event-label="high"
         console.log('Unable to set config key: META_LAST_UPDATE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.META_LAST_UPDATE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('SDG_RELATED_INDICATORS', "");
         var propertyEditor = editor.getEditor('root.SDG_RELATED_INDICATORS');
@@ -710,7 +809,11 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: SDG_RELATED_INDICATORS');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS'));propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SDG_RELATED_INDICATORS'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('CONTACT_ORGANISATION', "");
         var propertyEditor = editor.getEditor('root.CONTACT_ORGANISATION');
@@ -723,6 +826,8 @@ data-event-label="high"
         console.log('Unable to set config key: CONTACT_ORGANISATION');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_ORGANISATION'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('CONTACT_NAME', "");
         var propertyEditor = editor.getEditor('root.CONTACT_NAME');
@@ -735,6 +840,8 @@ data-event-label="high"
         console.log('Unable to set config key: CONTACT_NAME');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_NAME'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('ORGANISATION_UNIT', "");
         var propertyEditor = editor.getEditor('root.ORGANISATION_UNIT');
@@ -747,6 +854,8 @@ data-event-label="high"
         console.log('Unable to set config key: ORGANISATION_UNIT');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.ORGANISATION_UNIT'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('CONTACT_FUNCT', "");
         var propertyEditor = editor.getEditor('root.CONTACT_FUNCT');
@@ -759,6 +868,8 @@ data-event-label="high"
         console.log('Unable to set config key: CONTACT_FUNCT');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_FUNCT'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('CONTACT_PHONE', "");
         var propertyEditor = editor.getEditor('root.CONTACT_PHONE');
@@ -771,6 +882,8 @@ data-event-label="high"
         console.log('Unable to set config key: CONTACT_PHONE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_PHONE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('CONTACT_MAIL', "");
         var propertyEditor = editor.getEditor('root.CONTACT_MAIL');
@@ -783,6 +896,8 @@ data-event-label="high"
         console.log('Unable to set config key: CONTACT_MAIL');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_MAIL'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('CONTACT_EMAIL', "");
         var propertyEditor = editor.getEditor('root.CONTACT_EMAIL');
@@ -794,7 +909,11 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: CONTACT_EMAIL');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_EMAIL'));propertyEditorAccessibilityFixes(editor.getEditor('root.IND_DEF_CON_CLASS'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CONTACT_EMAIL'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.IND_DEF_CON_CLASS'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('STAT_CONC_DEF', "## Definition:\nThe proportion of the employed population below the international poverty line of US$1.90 per day, also referred to as the working poverty rate, is defined as the share of employed persons living in households with per-capita consumption or income that is below the international poverty line of US$1.90.\n## Concepts:\n**Employment:** All persons of working age who, during a short reference period (one week), were engaged in any activity to produce goods or provide services for pay or profit.\n\n**Poverty Line:** Threshold below which individuals in the reference population are considered poor and above which they are considered non-poor. The threshold is generally defined as the per-capita monetary requirements an individual needs to afford the purchase of a basic bundle of goods and services. For the purpose of this indicator, an absolute international poverty line of US$1.90 per day is used.\n\n**Household in poverty:** Households are defined as poor if their income or consumption expenditure is below the poverty line taking into account the number of household members and composition (e.g., number of adults and children).\n\n**Working poor:** Employed persons living in households that are classified as poor, that is, that have income or consumption levels below the poverty line used for measurement.");
         var propertyEditor = editor.getEditor('root.STAT_CONC_DEF');
@@ -807,6 +926,8 @@ data-event-label="high"
         console.log('Unable to set config key: STAT_CONC_DEF');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.STAT_CONC_DEF'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('UNIT_MEASURE', "");
         var propertyEditor = editor.getEditor('root.UNIT_MEASURE');
@@ -819,6 +940,8 @@ data-event-label="high"
         console.log('Unable to set config key: UNIT_MEASURE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.UNIT_MEASURE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('CLASS_SYSTEM', "");
         var propertyEditor = editor.getEditor('root.CLASS_SYSTEM');
@@ -830,7 +953,11 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: CLASS_SYSTEM');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM'));propertyEditorAccessibilityFixes(editor.getEditor('root.SRC_TYPE_COLL_METHOD'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.CLASS_SYSTEM'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.SRC_TYPE_COLL_METHOD'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('SOURCE_TYPE', "");
         var propertyEditor = editor.getEditor('root.SOURCE_TYPE');
@@ -843,6 +970,8 @@ data-event-label="high"
         console.log('Unable to set config key: SOURCE_TYPE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.SOURCE_TYPE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('COLL_METHOD', "");
         var propertyEditor = editor.getEditor('root.COLL_METHOD');
@@ -855,6 +984,8 @@ data-event-label="high"
         console.log('Unable to set config key: COLL_METHOD');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COLL_METHOD'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('FREQ_COLL', "");
         var propertyEditor = editor.getEditor('root.FREQ_COLL');
@@ -867,6 +998,8 @@ data-event-label="high"
         console.log('Unable to set config key: FREQ_COLL');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.FREQ_COLL'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('REL_CAL_POLICY', "");
         var propertyEditor = editor.getEditor('root.REL_CAL_POLICY');
@@ -879,6 +1012,8 @@ data-event-label="high"
         console.log('Unable to set config key: REL_CAL_POLICY');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.REL_CAL_POLICY'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('DATA_SOURCE', "");
         var propertyEditor = editor.getEditor('root.DATA_SOURCE');
@@ -891,6 +1026,8 @@ data-event-label="high"
         console.log('Unable to set config key: DATA_SOURCE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_SOURCE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('COMPILING_ORG', "");
         var propertyEditor = editor.getEditor('root.COMPILING_ORG');
@@ -903,6 +1040,8 @@ data-event-label="high"
         console.log('Unable to set config key: COMPILING_ORG');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPILING_ORG'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('INST_MANDATE', "");
         var propertyEditor = editor.getEditor('root.INST_MANDATE');
@@ -914,7 +1053,11 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: INST_MANDATE');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.INST_MANDATE'));propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_METHOD'));
+    propertyEditorAccessibilityFixes(editor.getEditor('root.INST_MANDATE'));
+
+    propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_METHOD'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('RATIONALE', "");
         var propertyEditor = editor.getEditor('root.RATIONALE');
@@ -927,6 +1070,8 @@ data-event-label="high"
         console.log('Unable to set config key: RATIONALE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.RATIONALE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('REC_USE_LIM', "");
         var propertyEditor = editor.getEditor('root.REC_USE_LIM');
@@ -939,6 +1084,8 @@ data-event-label="high"
         console.log('Unable to set config key: REC_USE_LIM');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.REC_USE_LIM'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('DATA_COMP', "");
         var propertyEditor = editor.getEditor('root.DATA_COMP');
@@ -951,6 +1098,8 @@ data-event-label="high"
         console.log('Unable to set config key: DATA_COMP');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_COMP'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('DATA_VALIDATION', "");
         var propertyEditor = editor.getEditor('root.DATA_VALIDATION');
@@ -963,6 +1112,8 @@ data-event-label="high"
         console.log('Unable to set config key: DATA_VALIDATION');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.DATA_VALIDATION'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('DOC_METHOD', "");
         var propertyEditor = editor.getEditor('root.DOC_METHOD');
@@ -975,6 +1126,8 @@ data-event-label="high"
         console.log('Unable to set config key: DOC_METHOD');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.DOC_METHOD'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('QUALITY_MGMNT', "");
         var propertyEditor = editor.getEditor('root.QUALITY_MGMNT');
@@ -987,6 +1140,8 @@ data-event-label="high"
         console.log('Unable to set config key: QUALITY_MGMNT');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_MGMNT'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('QUALITY_ASSURE', "");
         var propertyEditor = editor.getEditor('root.QUALITY_ASSURE');
@@ -999,6 +1154,8 @@ data-event-label="high"
         console.log('Unable to set config key: QUALITY_ASSURE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSURE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('QUALITY_ASSMNT', "");
         var propertyEditor = editor.getEditor('root.QUALITY_ASSMNT');
@@ -1011,6 +1168,8 @@ data-event-label="high"
         console.log('Unable to set config key: QUALITY_ASSMNT');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.QUALITY_ASSMNT'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('COVERAGE', "");
         var propertyEditor = editor.getEditor('root.COVERAGE');
@@ -1023,6 +1182,8 @@ data-event-label="high"
         console.log('Unable to set config key: COVERAGE');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COVERAGE'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('COMPARABILITY', "");
         var propertyEditor = editor.getEditor('root.COMPARABILITY');
@@ -1035,6 +1196,8 @@ data-event-label="high"
         console.log('Unable to set config key: COMPARABILITY');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.COMPARABILITY'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('OTHER_DOC', "");
         var propertyEditor = editor.getEditor('root.OTHER_DOC');
@@ -1047,6 +1210,8 @@ data-event-label="high"
         console.log('Unable to set config key: OTHER_DOC');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.OTHER_DOC'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('national_data_update_url', "https://github.com/open-sdg-test/data/commit/16bd05114239abb80926a31429a248c2223a0fbe");
         var propertyEditor = editor.getEditor('root.national_data_update_url');
@@ -1059,6 +1224,8 @@ data-event-label="high"
         console.log('Unable to set config key: national_data_update_url');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_update_url'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('national_data_update_url_text', "2021-08-25: see changes on GitHub");
         var propertyEditor = editor.getEditor('root.national_data_update_url_text');
@@ -1071,6 +1238,8 @@ data-event-label="high"
         console.log('Unable to set config key: national_data_update_url_text');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_data_update_url_text'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('national_metadata_update_url', "https://github.com/open-sdg-test/data/commit/16bd05114239abb80926a31429a248c2223a0fbe");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url');
@@ -1083,6 +1252,8 @@ data-event-label="high"
         console.log('Unable to set config key: national_metadata_update_url');
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_update_url'));
+
+    
       try {
         var currentValue = normalizeCurrentValue('national_metadata_update_url_text', "2021-08-25: see changes on GitHub");
         var propertyEditor = editor.getEditor('root.national_metadata_update_url_text');
@@ -1094,7 +1265,11 @@ data-event-label="high"
         console.log(e.message);
         console.log('Unable to set config key: national_metadata_update_url_text');
       }
-    propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_update_url_text'));function isTranslationKey(text) {
+    propertyEditorAccessibilityFixes(editor.getEditor('root.national_metadata_update_url_text'));
+
+    
+
+    function isTranslationKey(text) {
       var parts = text.split('.');
       if (parts.length !== 2) {
         return false;
@@ -1224,12 +1399,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Search';</script>
 
-<script src='/site/assets/js/sdg.js?v=20210826092511'></script>
+<script src='/site/assets/js/sdg.js?v=20210907092120'></script>
 
 
     
     
-    <script src="/site/assets/js/custom.js?v=20210826092511"></script><script>
+    <script src="/site/assets/js/custom.js?v=20210907092120"></script><script>
 $(function() {
     if($('#indicatorData').length) {
       var domData = $('#indicatorData').data();

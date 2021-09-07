@@ -421,6 +421,11 @@ opensdg.autotrack = function(preset, category, action, label) {
         }
 
         // Calculate the ranges of values, years and colors.
+        function isMapValueInvalid(val) {
+          return _.isNaN(val) || val === '';
+        }
+        minimumValues = _.reject(minimumValues, isMapValueInvalid);
+        maximumValues = _.reject(maximumValues, isMapValueInvalid);
         plugin.valueRange = [_.min(minimumValues), _.max(maximumValues)];
         plugin.colorScale = chroma.scale(plugin.options.colorRange)
           .domain(plugin.valueRange)
@@ -3291,6 +3296,7 @@ var indicatorView = function (model, options) {
           scaler: {}
         },
         tooltips: {
+          backgroundColor: 'rgba(0,0,0,0.7)',
           callbacks: {
             label: function(tooltipItems, data) {
               return data.datasets[tooltipItems.datasetIndex].label + ': ' + view_obj.alterDataDisplay(tooltipItems.yLabel, data, 'chart tooltip');
