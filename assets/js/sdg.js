@@ -1959,8 +1959,44 @@ function getGraphLimits(graphLimits, selectedUnit, selectedSeries) {
  * @param {String} selectedSeries
  * @return {Array} Graph annotations objects, if any
  */
-function getGraphAnnotations(graphAnnotations, selectedUnit, selectedSeries) {
-  return getMatchesByUnitSeries(graphAnnotations, selectedUnit, selectedSeries);
+function getGraphAnnotations(graphAnnotations, selectedUnit, selectedSeries, graphTargetLines, graphSeriesBreaks) {
+  var annotations = getMatchesByUnitSeries(graphAnnotations, selectedUnit, selectedSeries);
+  if (graphTargetLines) {
+    annotations = annotations.concat(getGraphTargetLines(graphTargetLines, selectedUnit, selectedSeries));
+  }
+  if (graphSeriesBreaks) {
+    annotations = annotations.concat(getGraphSeriesBreaks(graphSeriesBreaks, selectedUnit, selectedSeries));
+  }
+  return annotations;
+}
+
+/**
+ * @param {Array} graphTargetLines Objects containing 'unit' or 'series' or more
+ * @param {String} selectedUnit
+ * @param {String} selectedSeries
+ * @return {Array} Graph annotations objects, if any
+ */
+function getGraphTargetLines(graphTargetLines, selectedUnit, selectedSeries) {
+  return getMatchesByUnitSeries(graphTargetLines, selectedUnit, selectedSeries).map(function(targetLine) {
+    targetLine.preset = 'target_line';
+    targetLine.label = { content: targetLine.label_content };
+    return targetLine;
+  });
+
+}
+
+/**
+ * @param {Array} graphSeriesBreaks Objects containing 'unit' or 'series' or more
+ * @param {String} selectedUnit
+ * @param {String} selectedSeries
+ * @return {Array} Graph annotations objects, if any
+ */
+function getGraphSeriesBreaks(graphSeriesBreaks, selectedUnit, selectedSeries) {
+  return getMatchesByUnitSeries(graphSeriesBreaks, selectedUnit, selectedSeries).map(function(seriesBreak) {
+    seriesBreak.preset = 'series_break';
+    seriesBreak.label = { content: seriesBreak.label_content };
+    return seriesBreak;
+  });
 }
 
 /**
@@ -2514,6 +2550,8 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
   this.graphLimits = options.graphLimits;
   this.stackedDisaggregation = options.stackedDisaggregation;
   this.graphAnnotations = options.graphAnnotations;
+  this.graphTargetLines = options.graphTargetLines;
+  this.graphSeriesBreaks = options.graphSeriesBreaks;
   this.indicatorDownloads = options.indicatorDownloads;
   this.compositeBreakdownLabel = options.compositeBreakdownLabel;
   this.precision = options.precision;
@@ -2786,7 +2824,7 @@ function getPrecision(precisions, selectedUnit, selectedSeries) {
       selectedSeries: this.selectedSeries,
       graphLimits: helpers.getGraphLimits(this.graphLimits, this.selectedUnit, this.selectedSeries),
       stackedDisaggregation: this.stackedDisaggregation,
-      graphAnnotations: helpers.getGraphAnnotations(this.graphAnnotations, this.selectedUnit, this.selectedSeries),
+      graphAnnotations: helpers.getGraphAnnotations(this.graphAnnotations, this.selectedUnit, this.selectedSeries, this.graphTargetLines, this.graphSeriesBreaks),
       chartTitle: this.chartTitle,
       indicatorDownloads: this.indicatorDownloads,
       precision: helpers.getPrecision(this.precision, this.selectedUnit, this.selectedSeries),
